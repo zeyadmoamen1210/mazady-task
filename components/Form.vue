@@ -15,7 +15,7 @@
 
             <el-form-item prop="subCategory" :rules="[{required: true, message: 'This field is required'}]">
                 <label class="block font-semibold" for="subCategory">الأقسام الفرعية</label>
-                <el-select  @change="getProperties" class="w-full" filterable placeholder="أختر قسم فرعي" v-model="formData.subCategory">
+                <el-select value-key="id" @change="getProperties" class="w-full" filterable placeholder="أختر قسم فرعي" v-model="formData.subCategory">
                     <el-option
                         v-for="cat in subCategories"
                         :key="cat.id"
@@ -28,7 +28,7 @@
 
             <el-form-item prop="property" :rules="[{required: true, message: 'This field is required'}]">
                 <label class="block font-semibold" for="property">العناصر</label>
-                <el-select key-value="id" @change="getPropertyTypes" v-loading="propertiesLoading" class="w-full" filterable placeholder="أختر عنصر" v-model="formData.property">
+                <el-select value-key="id" @change="getPropertyTypes" v-loading="propertiesLoading" class="w-full" filterable placeholder="أختر عنصر" v-model="formData.property">
                     <el-option
                         v-for="pro in properties"
                         :key="pro.id"
@@ -42,7 +42,7 @@
             
 
             
-            <el-form-item v-if="formData.property === 'other'" prop="writedProperty" :rules="[{required: true, message: 'this field is required'}]">
+            <el-form-item v-if="formData.property&&formData.property.id === 'other'" prop="writedProperty" :rules="[{required: true, message: 'this field is required'}]">
                 <el-input v-model="formData.writedProperty" placeholder=" العنصر"></el-input>
             </el-form-item>
 
