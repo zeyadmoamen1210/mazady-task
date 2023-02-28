@@ -1,0 +1,12 @@
+.send-to-purchaser {
+    &__input {
+        input {
+            border-radius: 1rem;
+            background-color: var(--color-light-grey);
+
+            &::placeholder {
+                color: var(--color-black);
+            }
+        }
+    }
+}

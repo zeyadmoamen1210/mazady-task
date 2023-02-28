@@ -1,0 +1,13 @@
+
+@font-face {
+    font-family: 'FontRegular';
+    src: url('@/assets/fonts/Tajawal-Regular.ttf') format('opentype');
+}
+  
+
+body {
+    font-weight: 400;
+    line-height: 1.7;
+    // font-size: 1.4rem;
+    font-family: "FontRegular", sans-serif;
+}

@@ -1,0 +1,5 @@
+.el-input {
+        &.navbar-search {
+            .el-input__inner {background-color: red !important;}
+        }
+}

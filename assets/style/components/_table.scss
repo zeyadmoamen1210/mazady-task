@@ -1,0 +1,9 @@
+table.even-border{
+    tr {
+        &:nth-child(even) {
+            td{
+                background-color: var(--color-secondary-light);
+            }
+        }
+    }
+}

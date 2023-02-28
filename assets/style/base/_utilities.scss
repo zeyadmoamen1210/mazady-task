@@ -1,0 +1,21 @@
+.sm:width-55-perc {
+    @media screen and (max-width: 640px) {
+        min-width: 55%;
+    }
+}
+.min-width-40-perc {
+    min-width: 40%;
+    @media screen and (max-width: 600px) {
+        min-width: 100%;
+    }
+}
+.right-minus-11 {
+    right: -11px;
+}
+
+.transform-x-minus-50 {
+    transform: translate(-50%, -50%);
+}
+.text-xxs {
+    font-size: 0.55rem;
+}

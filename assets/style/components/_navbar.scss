@@ -1,0 +1,10 @@
+.app-navbar{
+    &__input {
+        input {
+            background-color: var(--color-primary-light);
+            &::placeholder {
+                color: var(--color-black);
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.swiper-container {
+    padding: .8rem 1.5rem 1.5rem !important;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -1px !important;
+}
+
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+    font-size: 1.3rem;
+    color: var(--color-black);
+    background: var(--color-white);
+    box-shadow: var(--shadow-main);
+    padding: .4rem 0.7rem;
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-primary) !important;
+}

@@ -1,0 +1,14 @@
+@layer base {
+    :root {
+      --color-primary: rgb(210 6 83);
+      --color-primary-light: rgb(210 6 83 / 11%);
+      --color-black: rgb( 50 50 50);
+      --color-white: rgb( 255 255 255);
+      --color-secondary: rgb( 253 188 1);
+      --color-secondary-light: rgba( 253 ,188, 1, 0.13);
+
+      --color-light-grey: rgb(243 243 243);
+
+      --shadow-main: 0 0 16px 5px #e8e8e8;
+    }
+}
