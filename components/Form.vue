@@ -12,7 +12,7 @@
                     ></el-option>
                 </el-select>
             </el-form-item>
-
+            <span>00</span>
             <el-form-item prop="subCategory" :rules="[{required: true, message: 'This field is required'}]">
                 <label class="block font-semibold" for="subCategory">الأقسام الفرعية</label>
                 <el-select value-key="id" @change="getProperties" class="w-full" filterable placeholder="أختر قسم فرعي" v-model="formData.subCategory">
@@ -25,7 +25,7 @@
                 </el-select>
             </el-form-item>
 
-
+            <span>00</span>
             <el-form-item prop="property" :rules="[{required: true, message: 'This field is required'}]">
                 <label class="block font-semibold" for="property">العناصر</label>
                 <el-select value-key="id" @change="getPropertyTypes" v-loading="propertiesLoading" class="w-full" filterable placeholder="أختر عنصر" v-model="formData.property">
